@@ -2,22 +2,23 @@
 
 int	main(int argc, char *argv[])
 {
-	int	courses;
 	int	i;
 
 	if (argc == 2)
 	{
 		if (ft_isint(argv[1]))
 		{
-			courses = ft_atoi(argv[1]);
-			if (!(g_grades = (t_course **)malloc(sizeof(*g_grades) * courses)))
+			g_grd_nb = ft_atoi(argv[1]);
+			if (!(g_grades = (t_course **)malloc(sizeof(*g_grades) * g_grd_nb)))
 				return (0);
 			i = 0;
-			while (i < courses)
-				if (!(g_grades[i++] = (t_course *)malloc(sizeof(*g_grades) * 3)))
+			while (i < g_grd_nb)
+				if (!(g_grades[i++] = (t_course *)malloc(sizeof(*g_grades) * 4)))
 					return (0);
-			ft_intro();
-			ft_avg(courses);
+			ft_run_avg();
+			printf("\nThank you for using this program !\n\n");
+			free(g_grades);
+			sleep(SLEEP);
 		}
 		else
 		{
