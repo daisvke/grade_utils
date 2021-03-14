@@ -14,7 +14,7 @@ void	ft_putgrade(int i)
 			pf("\nPlease enter a valid number\n\n");
 		first = 0;
 		printf("Grade %d: ", i + 1);
-		if (scanf("%f", &g_grades[i]->grad) && g_grades[i]->grad > 0)
+		if (scanf("%f", &g_grades[i]->grad) && g_grades[i]->grad >= 0)
 			is_valid = 1;
 	}
 }
@@ -33,7 +33,7 @@ void	ft_putcoef(int i)
 			pf("\nPlease enter a valid number\n\n");
 		first = 0;
 		printf("Coef %d: ", i + 1);
-		if (scanf("%f", &g_grades[i]->coef) && g_grades[i]->coef > 0)
+		if (scanf("%f", &g_grades[i]->coef) && g_grades[i]->coef >= 0)
 			is_valid = 1;
 	}
 }
