@@ -4,7 +4,7 @@ This program will calculate your average grade.
 
 ### Commands
 
-* First, create the executable file with the "make" command
+* First, create the executable file with the "make" command.
 * The program must be run as follows:
   ```
   ./avg [number_of_grade]
