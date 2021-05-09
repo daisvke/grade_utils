@@ -18,5 +18,5 @@ This program will calculate your average grade.
 * The grades and the labels can be modified after being entered.
 
 <p align="center">
-  <img src="/screenshot/avg_all.png" width="30%" />
+  <img src="/screenshot/avg_all.png" width="40%" />
 </p>
