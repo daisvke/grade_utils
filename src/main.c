@@ -28,9 +28,9 @@ int	main(int argc, char *argv[])
 	}
 	else
 	{
-		pf("\n### argv error ###\n\n");
+		pf("\n### arg error ###\n\n");
 		pf("Run the program this way :\n");
-		pf("./avg [grade_number]\n\n");
+		pf("./avg [number_of_grade]\n\n");
 	}
 	return (0);
 }
