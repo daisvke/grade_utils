@@ -12,8 +12,10 @@ This program will calculate your average grade.
   
 ### Description
 
+* For each grade, the program asks for its "label" (subject), and its "coef" (coefficient, percentage).
 * The program can handle float numbers.
 * If the grade is a float number, a dot must be used instead of a coma.
+* The grades and the labels can be modified after being entered.
 
 <p align="center">
   <img src="/screenshot/avg_all.png" width="60%" />
