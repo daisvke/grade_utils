@@ -1,4 +1,4 @@
-#include "header.h"
+#include "avg.h"
 
 int	ft_isint(char *s)
 {

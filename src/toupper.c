@@ -5,7 +5,7 @@ int 	ft_ctoupper(int c)
 
 void	ft_stoupper(char *s)
 {
-	while (*s)
+	while (s && *s)
 	{
 		*s = ft_ctoupper(*s);
 		s++;

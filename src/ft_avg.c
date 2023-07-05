@@ -1,4 +1,4 @@
-#include "header.h"
+#include "avg.h"
 
 void	ft_avg(void)
 {

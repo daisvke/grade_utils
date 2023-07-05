@@ -1,12 +1,10 @@
-#include "header.h"
+#include "avg.h"
 
-void	ft_cleanbuf(void)
+void ft_cleanbuf(void)
 {
-	char	c;
+	char c;
 
-	do 
-	{
-        scanf("%c",&c);
-	}
-	while(c != '\n');
+	do
+		scanf("%c", &c);
+	while (c != '\n');
 }

@@ -1,4 +1,4 @@
-#include "header.h"
+#include "avg.h"
 
 void	ft_logo(void)
 {
@@ -13,8 +13,7 @@ void	ft_logo(void)
 void	ft_intro(void)
 {
 	ft_logo();
-	sleep(SLEEP);
+	sleep(SLEEP_TIME);
 	pf("\n### This program will calculate your average grade ###\n\n");
-	sleep(SLEEP);
 }
 

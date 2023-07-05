@@ -1,4 +1,4 @@
-#include "header.h"
+#include "avg.h"
 
 void	ft_firstline(void)
 {
@@ -29,5 +29,4 @@ void	ft_lastline(float coef_sum, float grades_sum)
 	printf("%*c+------+-------------------+\n", w, ' ');
 	printf("%*c| Avg. |%18.1f |\n", w, ' ', grades_sum / coef_sum);
 	printf("%*c+------+-------------------+\n\n", w, ' ');
-	sleep(SLEEP);
 }

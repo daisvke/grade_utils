@@ -1,11 +1,11 @@
 EXEC 		= avg
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -g3
 CC			= gcc
-INC			= -Iinc
+INC			= avg.h
 RM			= rm -rf
 
 SRC_DIR		= src/
-SRC_FILES	= $(notdir $(wildcard src/*.c)) 
+SRC_FILES	= $(notdir $(wildcard src/*.c))
 SRC			= $(addprefix $(SRC_DIR), $(SRC_FILES))
 
 OBJ_DIR		= obj/
@@ -17,9 +17,9 @@ all: $(EXEC)
 $(EXEC): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INC)
 	@mkdir -p obj
-	$(CC) $(CFLAGS) $(INC) -c $< -o $@
+	$(CC) -I. $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ_DIR)
