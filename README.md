@@ -16,7 +16,7 @@ This program will calculate your average grade.
 * The grades and the labels can be modified after being entered.
 
 <p align="center">
-  <img src="/screenshot/avg_all.png" width="40%" />
+  <img src="/screenshots/avg_all.png" width="40%" />
 </p>
 
 # grades
@@ -30,5 +30,5 @@ Every time you enter a grade, it will update the current average grade and displ
   ```
 
 <p align="center">
-  <img src="/screenshot/grades.png" width="40%" />
+  <img src="/screenshots/grades.png" width="40%" />
 </p>
